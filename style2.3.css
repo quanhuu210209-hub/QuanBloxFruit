@@ -1,0 +1,46 @@
+
+    /* CSS rất cơ bản để giống bố cục ảnh mẫu, không dùng thư viện */
+    body { font-family: Arial, sans-serif; margin: 16px; color: #111; }
+    h1 { text-align: center; margin: 0 0 12px; }
+
+    /* Bảng chung */
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+    th, td { border: 1px solid #ddd; padding: 10px; vertical-align: top; }
+
+    /* ===== BẢNG 1 ===== */
+    .table-1 { background: #289258; }      /* tô nền bảng 1 */
+    .table-1 th { font-weight: bold; text-align: right; background: #eb9dbb; } /* nền header */
+
+    /* ===== BẢNG 2 (ảnh trái / nội dung phải) ===== */
+    .table-2 .col-image { width: 45%; }
+    .table-2 .col-content { width: 55%; }
+    .table-2 img {
+      width: 100%;
+      max-width: 560px;   /* ảnh lớn vừa phải như hình mẫu */
+      height: 320px;      /* giữ khung chiều cao gần giống mẫu */
+      object-fit: cover;  /* cắt ảnh gọn, không méo */
+      display: block;
+    }
+    .about-sub { font-weight: bold; margin: 0 0 6px; }
+    .about-title { font-size: 28px; font-weight: 800; margin: 0 0 12px; }
+    .table-2 .col-content p { margin: 0 0 12px; }
+    .table-2 .col-content a { color: #b90b19; text-decoration: underline; }
+
+    /* ===== BẢNG 3 (mô tả | sản phẩm 1 | sản phẩm 2) ===== */
+    .table-3 .col-desc,
+    .table-3 .col-prod-1,
+    .table-3 .col-prod-2 { width: 33.333%; }
+
+    .prod img {
+      width: 100%;
+      max-width: 360px;   /* vừa khung như ảnh mẫu */
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .prod-name { font-weight: 800; margin-bottom: 4px; }
+    .prod-price { color: #222; }
+
+    /* Loại bỏ đường viền ô ở các nơi cần giống mẫu hơn */
+    .no-border td, .no-border th { border: none; }
