@@ -1,0 +1,60 @@
+/* ===== GAMEPASS CARD GRID ===== */
+.gamepass-grid {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  padding: 0 20px;
+}
+
+/* ===== CARD ===== */
+.gamepass-card {
+  background: linear-gradient(180deg, #173169, #0b1325);
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #aaf0bf;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER */
+.gamepass-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+/* ===== IMAGE ===== */
+.gamepass-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 24px 24px 0 0;
+}
+
+/* ===== CONTENT ===== */
+.gamepass-card .gamepass-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.gamepass-card h4 {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #3aee22;
+}
+.gamepass-card h3 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: #22d3ee;
+}
+.gamepass-card p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
