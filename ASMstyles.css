@@ -1,0 +1,364 @@
+/* CSS cho demo CSS Units & Typography */
+
+/* 1) Thiết lập gốc */
+html {
+  font-size: 16px;
+}
+
+:root {
+  --step--2: clamp(0.75rem, 0.70rem + 0.2vw, 0.85rem);
+  --step--1: clamp(0.875rem, 0.80rem + 0.3vw, 1rem);
+  --step-0:  clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+  --step-1:  clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+  --step-2:  clamp(1.25rem, 1.1rem + 0.8vw, 1.625rem);
+  --step-3:  clamp(1.5rem, 1.3rem + 1.0vw, 2rem); /*h2*/
+  --step-4:  clamp(2rem, 1.8rem + 1.5vw, 2.5rem);
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+
+  --bg: #14154d;
+  --surface: #b1b1b1;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #FFFFFF;
+  --accent: #a78bfa;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.7;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg), #05185500);
+  margin: 0;
+}
+
+/* ===== CONTAINER CHUNG (GIỮ NGUYÊN) ===== */
+.container {
+  width: min(92%, 72ch);
+  margin: 0 auto;
+}
+
+/* ===== HEADER (ĐÃ FIX LỖI) ===== */
+.site-header {
+  background: #0b1325;
+  border-bottom: 2px solid #22d3ee;
+}
+
+/* 🔧 FIX SAI Ở ĐÂY */
+.site-header .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: var(--step-3);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.brand img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.nav a {
+  color: #e5e7eb;
+  font-weight: 600;
+  margin-left: 1rem;
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+}
+
+.nav a:hover {
+  color: #22d3ee;
+  text-decoration: underline;
+}
+
+/* ===== TABLE ===== */
+.table-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  border-collapse: collapse;
+  background: #1f2a44;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.table-1 th {
+  background: #4259bd;
+  color: #22d3ee;
+  font-size: 1.1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.table-1 td {
+  padding: 1rem;
+  color: #e5e7eb;
+  line-height: 1.8;
+}
+
+.table-1 tr:not(:last-child) td {
+  border-bottom: 1px solid #33447c;
+}
+/* GRID */
+#features { 
+display: grid; 
+grid-template-columns: 25% 25% 25% 25%; 
+} 
+
+/* ===== HEADER HÀI HÒA THEME (SEKIRO STYLE) ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;          /* QUAN TRỌNG: không bị che */
+  width: 100%;           /* đảm bảo full ngang */
+  background: linear-gradient(180deg, #0b1325, #27a8cf);
+  border-bottom: 2px solid #00e1ff;
+}
+
+
+/* full width */
+.site-header .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+/* logo */
+.brand img {
+  width: 140px;
+  height: auto;
+  filter: brightness(1.05);
+}
+
+/* menu */
+.nav a {
+  color: #e5e7eb;
+  font-weight: 500;
+  margin-left: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+/* hover nhẹ – không gắt */
+.nav a:hover {
+  color: #ce0700;
+}
+/* FIX MENU BỊ THIẾU GAMEPASS */
+.site-header .container {
+  max-width: 1300px;   /* tăng độ rộng header */
+}
+
+/* menu co giãn tốt hơn */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+/* chữ menu nhỏ lại chút */
+.nav a {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+/* Footer */
+.site-footer { border-top: 1px solid #1f2937; margin-top: var(--space-4); }
+.site-footer .container { padding: var(--space-2) 0; color: var(--muted); font-size: var(--step--1); }
+/* footer layout */
+.site-footer .footer-inner {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+/* bên trái */
+.site-footer .footer-info {
+  flex: 1;
+}
+
+/* bên phải */
+.site-footer .footer-map {
+  flex: 1;
+}
+
+.site-footer .footer-map iframe {
+  width: 100%;
+  height: 280px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* ===== TABLE 2 ===== */
+.table-2 {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 60px auto;
+}
+
+.table-2 td {
+  vertical-align: middle;
+  padding: 20px;
+}
+
+
+/* CỘT ẢNH – KHÔNG NỀN */
+.col-image img {
+  width: 400px;
+  border-radius: 30px;
+  display: block;
+}
+
+/* CỘT NỘI DUNG */
+.col-content {
+  width: 60%;
+}
+
+/* NỀN CHỈ Ở ĐÂY */
+.col-content .content-box {
+  background-color: #162a5c;   /* nền đậm */
+  color: rgba(255, 255, 255, 0.692);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* TEXT */
+.about-sub {
+  color: #b2bec3;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.about-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.col-content a {
+  color: #00cec9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== BẢNG 3 – 3 CARD NGANG ===== */
+.table-3 {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* CARD */
+.table-3 .card {
+  width: 280px;
+  height: 380px;
+  flex-direction: column; 
+  background: linear-gradient(180deg, #173169, #1acbd8);
+  border-radius: 24px;
+  text-decoration: none;
+  color: #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER PHÓNG TO */
+.table-3 .card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+/* NỘI DUNG GIỮA */
+.card-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #E0F7FA;
+  line-height: 1.6;
+}
+
+.video-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.video-box {
+  position: relative;
+  width: 420px;        /* 👈 chỉnh nhỏ / to tại đây */
+  padding-top: 56.25%;
+  flex-shrink: 0;
+}
+
+.video-box iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.video-text h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.video-text p {
+  color: #b2bec3;
+  line-height: 1.6;
+}
+
+/* Responsive: mobile tự xếp dọc */
+@media (max-width: 768px) {
+  .video-row {
+    flex-direction: column;
+  }
+
+  .video-box {
+    width: 100%;
+  }
+}
+
+
