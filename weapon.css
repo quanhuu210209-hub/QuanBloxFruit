@@ -1,0 +1,146 @@
+/* ==========================================================================
+   WEAPONS & COMBAT STYLES (weapon.css)
+   ========================================================================== */
+
+.weapon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.weapon-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(16px);
+  position: relative;
+  transition: all var(--transition-slow);
+}
+
+.weapon-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--cyan-primary);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 30px var(--cyan-glow);
+}
+
+/* Image Presentation Area */
+.weapon-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: radial-gradient(circle at center, rgba(6, 182, 212, 0.12) 0%, rgba(17, 27, 48, 0.8) 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.weapon-image-wrap img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform var(--transition-slow);
+}
+
+.weapon-card:hover .weapon-image-wrap img {
+  transform: scale(1.08);
+}
+
+/* Weapon Type Badges */
+.badge-sword {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+}
+
+.badge-melee {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+}
+
+.badge-gun {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+/* Card Body */
+.weapon-body {
+  padding: var(--space-lg) var(--space-xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: var(--space-sm);
+}
+
+.weapon-body .weapon-type-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cyan-light);
+}
+
+.weapon-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-pure);
+  letter-spacing: 0.02em;
+}
+
+.weapon-body p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Weapon Combat Stats Bar */
+.weapon-stats-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 8px;
+  margin: var(--space-xs) 0;
+  text-align: center;
+}
+
+.stat-box .val {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+}
+
+.stat-box .lbl {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* Card Bottom Action */
+.weapon-card-action {
+  margin-top: auto;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.weapon-card-action .btn-detail {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+}

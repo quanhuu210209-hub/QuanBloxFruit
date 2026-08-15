@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blox Fruits Wiki & Hub | ASM Nguyễn Hữu Quân</title>
+  <meta name="description" content="Trang tổng hợp thông tin, trái ác quỷ, vũ khí và gamepass Blox Fruits chuẩn xác và hiện đại nhất.">
+  <link rel="stylesheet" href="ASMstyles.css">
+</head>
+<body>
+
+  <!-- ===== SITE HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="Blox Fruits Wiki Home">
+          <img src="images/blox-logo.png" alt="Blox Fruits Logo" class="brand-logo">
+          <div class="brand-title">
+            <span class="main-name">BLOX FRUITS</span>
+            <span class="sub-name">Wiki & Guide</span>
+          </div>
+        </a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Mở menu điều hướng">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html" class="active">Giới Thiệu</a>
+        <a href="fruit.html">Trái Ác Quỷ</a>
+        <a href="weapon.html">Vũ Khí</a>
+        <a href="gamepass.html">GamePass</a>
+        <a href="#cauhoi">Hỏi & Đáp</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="nav-overlay"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-badge">
+        <span>⭐ Game Top #1 Thế Giới Roblox</span>
+      </div>
+      <h1 class="hero-title">
+        KHÁM PHÁ THẾ GIỚI <br>
+        <span class="gradient-text">BLOX FRUITS HUYỀN THOẠI</span>
+      </h1>
+      <p class="hero-desc">
+        Hành trình trở thành Vua Hải Tặc hoặc Kiếm Sĩ Vĩ Đại nhất. Nắm giữ sức mạnh tối thượng từ các loại Trái Ác Quỷ và sở hữu kho vũ khí thần thoại.
+      </p>
+      <div class="hero-actions">
+        <a href="fruit.html" class="btn btn-primary">🍏 Xem Trái Ác Quỷ</a>
+        <a href="weapon.html" class="btn btn-secondary">⚔️ Kho Vũ Khí</a>
+        <a href="gamepass.html" class="btn btn-secondary">💎 Gói GamePass</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO TRAILER SECTION ===== -->
+  <section class="video-section">
+    <div class="container">
+      <div class="video-container-card">
+        <div class="video-player-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/3toJR6XwO_E?si=v9L86B7UMq-49KoG"
+            title="Official Blox Fruits Trailer"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-content-info">
+          <span class="badge">🔥 Cinematic Trailer</span>
+          <h3>Trải Nghiệm Đỉnh Cao Gameplay</h3>
+          <p>
+            Blox Fruits đưa người chơi vào một thế giới mở rộng lớn với 3 vùng biển (Sea 1, Sea 2, Sea 3). Nơi bạn tham gia các trận chiến PvP nảy lửa, săn Boss thế giới, đột kích Raid Boss và thức tỉnh năng lực tiềm ẩn.
+          </p>
+          <div class="video-stats">
+            <div class="stat-item">
+              <div class="stat-num">30B+</div>
+              <div class="stat-label">Lượt Truy Cập</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">500K+</div>
+              <div class="stat-label">Online Cùng Lúc</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">4.9★</div>
+              <div class="stat-label">Đánh Giá</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BENTO MATRIX: GAME OVERVIEW ===== -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="sub-badge">Thông Tin Tổng Quan</span>
+        <h2>Lịch Sử & Thông Tin Dự Án</h2>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Card 1 -->
+        <div class="bento-card">
+          <div class="bento-icon">🎮</div>
+          <h3>Nhà Làm Game</h3>
+          <ul>
+            <li><span>Phát hành:</span> Gamer Robot Inc</li>
+            <li><span>Nhà sáng lập:</span> mygame43 (Redhead)</li>
+            <li><span>Đồng phát triển:</span> rip_indra</li>
+            <li><span>Nền tảng:</span> Roblox Engine</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bento-card">
+          <div class="bento-icon">📅</div>
+          <h3>Ngày Ra Mắt</h3>
+          <p>
+            Blox Fruits được chính thức phát hành vào ngày <strong>16 tháng 1 năm 2019</strong>. Khởi đầu với tên gọi Blox Piece và nhanh chóng trở thành hiện tượng toàn cầu.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bento-card">
+          <div class="bento-icon">🚀</div>
+          <h3>Quá Trình Phát Triển</h3>
+          <p>
+            Liên tục cập nhật qua hơn 20 bản Update lớn: mở rộng Sea 2, Sea 3, hệ thống Race V4 thức tỉnh, đồ họa cải tiến và bổ sung các trái ác quỷ Thần Thoại như Dragon, Kitsune, Dough V2.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bento-card">
+          <div class="bento-icon">🏆</div>
+          <h3>Thành Tựu Nổi Bật</h3>
+          <p>
+            Đạt giải thưởng Roblox Innovation Awards, lọt top game có doanh thu và lượng người chơi hoạt động đông đảo nhất lịch sử Roblox với cộng đồng hàng chục triệu thành viên.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT BLOX FRUITS SHOWCASE ===== -->
+  <section class="about-showcase-section">
+    <div class="container">
+      <div class="about-showcase-card">
+        <div class="about-media-col">
+          <img src="images/blox1.jpg" alt="Blox Fruits Thế Giới Mở">
+        </div>
+        <div class="about-info-col">
+          <span class="about-tag">Hệ Thống Sức Mạnh</span>
+          <h2>Trái Ác Quỷ (Devil Fruits)</h2>
+          <p>
+            Trái Ác Quỷ mang lại cho người chơi những năng lực siêu phàm với các bộ kỹ năng biến hóa khôn lường. Trong thế giới Blox Fruits, chúng được phân bổ thành 3 hệ chính:
+          </p>
+
+          <div class="fruit-types-grid">
+            <div class="fruit-type-item">
+              <div class="type-icon">🌿</div>
+              <div class="type-title">Paramecia</div>
+              <div class="type-sub">Tự Nhiên (Dough, Portal)</div>
+            </div>
+            <div class="fruit-type-item">
+              <div class="type-icon">🐲</div>
+              <div class="type-title">Zoan</div>
+              <div class="type-sub">Quái Thú (Dragon, Phoenix)</div>
+            </div>
+            <div class="fruit-type-item">
+              <div class="type-icon">⚡</div>
+              <div class="type-title">Logia</div>
+              <div class="type-sub">Nguyên Tố (Light, Gas)</div>
+            </div>
+          </div>
+
+          <a href="fruit.html" class="btn btn-primary" style="width: fit-content;">Khám Phá Chi Tiết →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY NAVIGATION CARDS ===== -->
+  <section class="category-nav-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="sub-badge">Danh Mục Chính</span>
+        <h2>Khám Phá Kho Trang Bị</h2>
+      </div>
+
+      <div class="category-nav-grid">
+        <a href="fruit.html" class="cat-card">
+          <div class="cat-icon-wrap">🍏</div>
+          <h3>Trái Ác Quỷ</h3>
+          <p>Khám phá danh sách trái ác quỷ Thần thoại, Huyền thoại cùng bộ kỹ năng và độ hiếm.</p>
+          <span class="cat-link-text">Xem danh sách ➜</span>
+        </a>
+
+        <a href="weapon.html" class="cat-card">
+          <div class="cat-icon-wrap">⚔️</div>
+          <h3>Vũ Khí & Võ Thuật</h3>
+          <p>Kiếm huyền thoại Yoru, True Triple Katana, Soul Guitar và các phái võ Godhuman.</p>
+          <span class="cat-link-text">Xem vũ khí ➜</span>
+        </a>
+
+        <a href="gamepass.html" class="cat-card">
+          <div class="cat-icon-wrap">💎</div>
+          <h3>Gói GamePass VIP</h3>
+          <p>Tăng tốc độ cày x2 Mastery, x2 Money, Fruit Notifier và nhận các đặc quyền VIP.</p>
+          <span class="cat-link-text">Xem GamePass ➜</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Q&A / FAQ SECTION (#cauhoi) ===== -->
+  <section id="cauhoi" class="faq-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="sub-badge">Hỏi Đáp Thường Gặp</span>
+        <h2>Q&A - Câu Hỏi Phổ Biến</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>1. Làm thế nào để sở hữu Trái Ác Quỷ trong Blox Fruits?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Bạn có thể mua trái ngẫu nhiên từ <strong>Blox Fruit Dealer Cousin</strong> bằng Beli hoặc chọn mua trực tiếp bằng Robux. Ngoài ra, trái còn xuất hiện tự nhiên dưới gốc cây sau mỗi 45-60 phút hoặc thưởng qua Factory Raid và Ship Raid.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>2. Làm sao để nâng cấp và Thức Tỉnh (Awakening) kỹ năng?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Khi đạt cấp độ yêu cầu ở Sea 2 và Sea 3, bạn có thể tham gia các trận <strong>Raid Trái Ác Quỷ</strong>. Thu thập Fragment (Mảnh vỡ) để mở khóa và nâng cấp các chiêu thức thức tỉnh cực mạnh (như Dough V2, Light V2, Magma V2).
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>3. Làm thế nào để mở khóa Sea 2 và Sea 3?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              - <strong>Sea 2:</strong> Đạt cấp độ 700+, hoàn thành chuỗi nhiệm vụ tại Prison (Tù nhân) và nói chuyện với Thám Tử Quân Đội.<br>
+              - <strong>Sea 3:</strong> Đạt cấp độ 1500+, hoàn thành nhiệm vụ Colosseum tại Kingdom of Rose và tiêu diệt Boss Don Swan.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>4. Vũ khí nào mạnh nhất cho việc đi PvP hiện nay?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Các vũ khí hàng đầu bao gồm <strong>Cursed Dual Katana (CDK)</strong>, <strong>True Triple Katana (TTK)</strong>, <strong>Dark Blade (Yoru)</strong> kết hợp cùng súng khống chế <strong>Soul Guitar</strong> và võ thuật <strong>Godhuman</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand / Student Info -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="images/blox-logo.png" alt="Blox Fruits Logo">
+            <span class="footer-logo-title">BLOX FRUITS HUB</span>
+          </div>
+          <p>
+            Dự án bài tập Assignment thiết kế website Blox Fruits với giao diện Gaming cao cấp, trực quan và tối ưu cho người dùng.
+          </p>
+          <div class="footer-student-badge">
+            👤 Sinh viên: <strong>Nguyễn Hữu Quân</strong> • FPT Polytechnic
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-col">
+          <h4>Điều Hướng</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">➔ Trang Chủ / Giới Thiệu</a></li>
+            <li><a href="fruit.html">➔ Danh Sách Trái Ác Quỷ</a></li>
+            <li><a href="weapon.html">➔ Kho Vũ Khí & Võ Thuật</a></li>
+            <li><a href="gamepass.html">➔ Cửa Hàng GamePass VIP</a></li>
+            <li><a href="#cauhoi">➔ Câu Hỏi & Trợ Giúp</a></li>
+          </ul>
+        </div>
+
+        <!-- Location Map -->
+        <div class="footer-map-col">
+          <h4>Địa Chỉ Liên Hệ</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">
+            📍 Nhà Thờ Giáo Xứ Gò Mây, 791/2 Lê Trọng Tấn, Bình Hưng Hòa, Bình Tân, TP.HCM
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.7348827968455!2d106.60191277547987!3d10.815939593206679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b958f35235b%3A0xd0ef08bc549e4576!2zTmjDoCBUaOG7nSBHacOhbyBY4bupIEfDsiBNw6J5!5e0!3m2!1svi!2s!4v1769756596352!5m2!1svi!2s"
+            loading="lazy"
+            title="Google Maps Location"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Nguyễn Hữu Quân. All Rights Reserved. Blox Fruits is a trademark of Gamer Robot Inc.</p>
+        <p>Built with Passion & Modern Web Technologies.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
